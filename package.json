@@ -1,0 +1,11 @@
+{
+  "name": "textiles-back",
+  "version": "1.0.0",
+  "description": "server for test assessment",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grigorev Sergey <grigorevs102@gmail.com>",
+  "license": "ISC"
+}
