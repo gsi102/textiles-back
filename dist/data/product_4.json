@@ -2,16 +2,16 @@
   "id": 4,
   "name": "SKU 4",
   "desc": "SKU 4 full description",
-  "img": "/path_to_local_storage/product_1.png",
+  "img": "/img/product_4.png",
   "textiles": [
     {
       "title": "Textile title 4",
       "desc": "Textile 4 description",
       "material": "Textile material 4",
       "images": [
-        "/path_to_local_storage/textile_1.png",
-        "/path_to_local_storage/textile_2.png",
-        "/path_to_local_storage/textile_3.png"
+        "/img/textile_1.png",
+        "/img/textile_2.png",
+        "/img/textile_3.png"
       ],
       "comments": [
         {

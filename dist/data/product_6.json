@@ -2,16 +2,16 @@
   "id": 6,
   "name": "SKU 6",
   "desc": "SKU 6 full description",
-  "img": "/path_to_local_storage/product_1.png",
+  "img": "/img/product_1.png",
   "textiles": [
     {
       "title": "Textile title 6",
       "desc": "Textile 6 description",
       "material": "Textile material 6",
       "images": [
-        "/path_to_local_storage/textile_1.png",
-        "/path_to_local_storage/textile_2.png",
-        "/path_to_local_storage/textile_3.png"
+        "/img/textile_3.png",
+        "/img/textile_1.png",
+        "/img/textile_2.png"
       ],
       "comments": [
         {

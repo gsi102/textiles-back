@@ -17,13 +17,13 @@ const cors_1 = __importDefault(require("cors"));
 const path_1 = __importDefault(require("path"));
 const app = (0, express_1.default)();
 // prod
-// const port = process.env.PORT || 8080;
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 8080;
+// const port = process.env.PORT || 3001;
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 // ENDPOINTS
 app.get("/products", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const productsFile = path_1.default.join(__dirname, "./data/products.json");
+    const productsFile = path_1.default.join(__dirname, "/data/products.json");
     res
         .status(200)
         .header("Content-Type", "application/json")
@@ -31,7 +31,15 @@ app.get("/products", (req, res) => __awaiter(void 0, void 0, void 0, function* (
 }));
 app.get("/products/:id", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const productID = req.params.id;
-    const productFile = path_1.default.join(__dirname, `./data/product_${productID}.json`);
+    const productFile = path_1.default.join(__dirname, `/data/product_${productID}.json`);
+    res
+        .status(200)
+        .header("Content-Type", "application/json")
+        .sendFile(productFile);
+}));
+app.get("/img/:imgPath", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const imgPath = req.params.imgPath;
+    const productFile = path_1.default.join(__dirname, `/img/${imgPath}`);
     res
         .status(200)
         .header("Content-Type", "application/json")
